@@ -1,0 +1,21 @@
+RewriteEngine on
+
+# MAIN
+# RewriteBase /
+
+RewriteRule ^parties   parties.php [L,PT]
+RewriteRule ^plateau-([0-9]*)   main.php?partie=$1 [L]
+RewriteRule ^plateau   main.php [L,PT]
+RewriteRule ^regles   regles.php [L,PT]
+RewriteRule ^partie_libre   main.php?np=1 [L,PT]
+
+RewriteRule ^accueil-([0-9]*)   index.php?partie=$1 [L]
+RewriteRule ^accueil  index.php [L,PT]
+RewriteRule ^profil   profil.php [L,PT]
+RewriteRule ^deconnecter index.php?dc=1 [L,PT]
+
+#RewriteRule ^wu-([a-z]*[0-9]*.*_*)   main.php?who=$1 [L,PT]
+
+#RewriteRule ^m   main.php [L,PT]
+
+

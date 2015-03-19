@@ -1,0 +1,509 @@
+/* CSS Document */
+body{
+	font-family: Arial,sans-serif;
+	padding:0;
+	margin:0;
+}
+
+#message_inscr.mess_OK{
+	background-color:#64FE2E;
+	border:1px solid green;
+}
+#message_inscr{
+	border:1px solid red;
+	margin-right:10px;
+	margin-left:5px;
+	border-radius:3px; 
+	padding:2px;
+	background-color:#FA5858;
+	color:white;
+}
+
+#topitop{
+	height:50px;
+	background-color:#170667;
+	color:white;
+	font-weight:bold;
+}
+#topitop_int{
+	width:720px;
+	margin:0 auto;
+	padding-top:16px;
+	font-size:18px;
+	text-align:right;
+}
+#topitop_int a,#topitop_int .alien{
+	color:white;
+	text-decoration:none;
+	border-radius:3px; 
+	border:1px solid gray;
+	padding:0px 7px 0px 7px;
+	cursor:pointer;
+}
+#topitop_int a:hover,#topitop_int .alien:hover{
+	color:yellow;
+	border:1px solid yellow;
+}
+#conteneur{
+	width:720px;
+	margin:0 auto;
+/* 	background-color:#006699; */
+	min-height:600px;
+	position:relative;
+}
+#top, #center, #footer{
+/* 	min-height:100px; */
+	width:100%;
+/* 	border:#FFFF66 1px solid; */
+float:left;
+}
+#footer{
+	text-align:center;
+	font-size:14px;
+	padding-top:20px;
+}
+#footer a{
+	font-weight:bold;
+	text-decoration:none;
+	color:#170667;
+	font-size:18px;
+	margin-right:10px;
+}
+#footer a:hover{
+	text-decoration:underline;
+	color:#333333;
+}
+.center_i{
+	text-align:center;
+	padding-top:20px;
+}
+#top{
+/* 	min-height:30px;
+	width:337; */
+	width:708px;
+	border-radius:7px; 
+	box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1); 
+	border:1px solid gray;
+	margin-top:5px;
+	margin-bottom:4px;
+	padding:10px 0px 0px 5px;
+	background-color:white;
+	float:left;
+}
+#plateau{
+	height:644px;
+	width:720px;
+/* 	left:120px; */
+	position:relative;
+	padding-top:0px;
+	background-color:#FFFFFF;
+	float:left;
+}
+#barre_p1,#barre_p2{
+	float:left;
+	width:720px;
+	color:grey;
+}
+.marques{
+	width:80px;
+	text-align:center;
+	font-weight:bold;
+	float:left;
+}
+.barre{
+	width:720px;
+	height:80px;
+}
+.barre_paire{
+	background-image:url(../images/elt/barre2.png);
+}
+.barre_impaire{
+	background-image:url(../images/elt/barre1.png);
+}
+.boule{
+	padding:8px;
+	cursor:pointer;
+	position:relative;
+}
+.case{
+/*	border:#000000 1px none;*/
+	width:80px;
+	height:78px;
+	float:left;
+}
+.case_ok{
+	/*border:green 1px solid;
+	width:78px;*/
+	background-color:blue; 
+	opacity : 0.2;
+    -moz-opacity : 0.2;
+    -ms-filter: "alpha(opacity=20)"; /* IE 8 */
+    filter : alpha(opacity=20); /* IE < 8 */
+	border-radius:50px;
+}
+.occupe{
+	/* background-color:red; */
+	/* border:red 1px solid; 
+	width:78px;*/
+}
+.bascule{
+	opacity : 0.9;
+    -moz-opacity : 0.9;
+    -ms-filter: "alpha(opacity=90)"; /* IE 8 */
+    filter : alpha(opacity=90); /* IE < 8 */
+}
+
+input{
+	border-radius:3px;
+	border-color:grey;
+	border-spacing: 2px;
+	border: 1px solid #ccd6dd;
+	background-color: rgb(250, 255, 189);
+	font-size: 13px;
+	padding: 1px;
+	box-shadow: inset 0 1px 0 #eee,#fff 0 1px 0;
+	height: 20px;
+	width:150px;;
+}
+
+[type="checkbox"]{
+	padding:2px;
+	box-shadow:none;
+}
+
+.st_i{
+	font-size:16px;
+	padding:10px 0px 10px 0px;
+	font-weight:bold;
+	font-style: italic;
+}
+.top_i h5{
+	padding:5px 0px 5px 0px;
+	margin:0px;
+	font-size:24px;
+} 
+
+.top_i{
+	text-align:center;
+	color:#170667;
+}
+
+.block_parties{
+	color:#170667;
+	width:708px;
+	border-radius:7px; 
+	box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1); 
+	border:1px solid gray;
+	margin-top:5px;
+	margin-bottom:4px;
+	padding:5px 0px 5px 5px;
+	background-color:white;
+	float:left;
+	min-height:100px;
+}
+
+.bt_form{
+	width:auto;
+	padding:3px 7px 10px 7px;
+	height:24px;
+	font-weight:bold;
+	color:#170667;
+}
+
+.joueur_p{
+	border-radius:3px;
+	border-color:grey;
+	border-spacing: 2px;
+	border: 1px solid #ccd6dd;
+	background-color: #170667;
+	color:white;
+	font-size: 13px;
+	padding: 1px;
+	box-shadow: inset 0 1px 0 #eee,#fff 0 1px 0;
+	font-weight:bold;
+	float:left;
+	margin-right:5px;
+/* 	margin-top:10px; */
+	padding:5px 7px;
+	cursor:pointer;
+/* 	margin-bottom:5px; */
+}
+.joueur_p:hover{
+	background-color: #DDDDDD;
+	color:#170667;
+}
+
+.enligne{
+	background-color: green;
+}
+
+img.enligne{
+	border:green 4px solid;
+}
+
+.joueur_virtuel{
+	background-color: orange;
+}
+
+
+.titre_block{
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:5px;
+}
+
+.top_i a{
+	font-weight:bold;
+	text-decoration:none;
+	color:#170667;
+	font-style: italic;
+}
+
+.top_i a:hover{
+	color:#555555;
+	text-decoration:underline;
+}
+
+/* AFFICHAGE DONNEES PARTIES */
+.pts_j{
+	text-align:center;
+	background-color:#170667;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	width:98px;
+	padding:5px;
+	border-radius:7px;
+	float:left;
+	margin-left:3px;
+	margin-right:4px;
+	height:24px;
+	border:black solid 1px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#pt1{
+	background-image:url(../images/elt/boule_bleue120.png);
+}
+#pt2{
+	background-image:url(../images/elt/boule_rouge120.png);
+}
+.noms_j{
+	border:#170667 solid 1px;
+	color:#170667;
+	font-size:16px;
+	font-weight:bold;
+	width:100px;
+/* 	padding:5px; */
+	border-radius:7px;
+	width:222px;
+	float:left;
+	margin-right:3px;
+	height:34px;
+}
+.cpdesch{
+	border:none;
+	width:700px;
+}
+#aquiletour{
+	color:#170667;
+	font-size:16px;
+	font-weight:bold;
+	width:98%;
+	padding:5px;
+	border-radius:7px;
+	text-align:center;
+	float:left;
+}
+.terminee{
+	border:#170667 solid 1px;
+	background-color:#F5D0A9;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+#debug{
+	float:left;
+	width:100%;
+}
+#msg_debug{
+	word-wrap: break-word;
+}
+#msg_partie{
+	border:red solid 1px;
+	color:#170667;
+	background-color:yellow;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	width:691px;
+	padding:5px;
+	border-radius:7px;
+	float:left;
+	margin-bottom:4px;
+}
+#profil{
+	text-align:center;
+}
+
+#profil table{
+	text-align:left;
+}
+
+[type="checkbox"]{
+	width: 17px; height: 17px;
+}
+
+.info_parties{
+	font-size:14px;
+	color:black;
+}
+
+.plateau_ic{
+	width:54px;
+	height:48px;
+	background-image:url(../images/fonds/plateau_icone.jpg);
+}
+.case_ic{
+	width:4px;
+	height:4px;
+	margin:1px;
+	float:left;
+}
+.cestamoi{
+	background-color:#170667;
+	color:white;
+	padding:2px 2px;
+}
+
+.partie_clickable{
+	cursor:pointer;
+	text-decoration:underline;
+}
+.vous{
+	color:red;
+}
+
+.img_j{
+	border-radius:15px;
+}
+
+#chat{
+	display:none;
+	position: fixed;
+    bottom: 0px;
+	left:0px;
+	width:300px;
+/* 	min-height:100px; */
+	border:1px solid grey;
+	border-radius:5px;
+}
+.bulle{
+	
+	border-radius:8px;
+	margin:5px;
+	width:250px;
+	padding:7px;
+	opacity: 1;
+	color:black;
+}
+.bulle1{
+	margin-left:32px;
+	margin-top:5px;
+	background-color:#A9F5F2;
+}
+.bulle2{
+	background-color:#F3F781;
+}
+#fermer_chat{
+	background-color:red;
+	color:white;
+	float:right;
+	cursor:pointer;
+	border-radius:3px;
+	padding:3px;
+	font-weight:bold;
+	margin:2px 2px 5px 0px;
+}
+#fermer_chat:hover{
+	color:#CCCCCC;
+}
+.chat_prec_suiv{
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+	font-size:12px;
+	text-decoration:underline;
+}
+#insert_chat{
+	padding:2px;
+}
+#dial_chat{
+	width:230px;
+	margin-bottom:2px;
+}
+#bt_chat{
+	width:22px;
+	height:20px;
+	border-radius:3px;
+	background-color:#170667;
+	border:1px solid black;
+	cursor:pointer;
+	margin:4px;
+	padding:3px;
+	color:white;
+	font-weight:bold;
+	font-size:24px;
+	margin-bottom:4px;
+}
+#bt_chat:hover{
+	color:#CCCCCC;
+}
+#bulles_ins{
+	width:100%;
+}
+#bulles{
+	width:100%;
+}
+#bulles_int{
+	width:100%;
+	max-height:600px;
+	overflow: scroll;
+}
+#top_chat{
+	width:100%;
+	height:28px;
+	background-color:grey;
+}
+.dt_chat,.qui_chat{
+	color:black;
+	font-size:12px;
+}
+.qui_chat{
+	font-weight:bold;
+}
+#notifications{
+	position:absolute;
+	left:420px;
+	top:3px;
+	width:280px;
+	border:1px solid black;
+	display:none;
+	background-color:white;
+	z-index:20000;
+	border-radius:3px;
+}
+.notif{
+	padding:2px;
+	margin:1px;
+	cursor:pointer;
+}
+.notif_impaire{
+	background-color:#CEF6D8;
+}
+.notif_paire{
+	background-color:#A9E2F3;
+}
+.app_chat{
+	cursor:pointer;
+}

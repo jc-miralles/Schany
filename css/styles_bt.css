@@ -1,0 +1,264 @@
+/* --  Boutons en CSS3 
+Réalisation © imaginative
+http:// www.web-imaginative.com
+
+-- */
+
+/*
+body {font-size: 100%; font-family: Arial,sans-serif;}
+h1{font-family: century gothic,arial,sans-serif; color:#333; text-align:center; padding:0 0 20px 0; margin-top:40px; text-shadow: 0px 1px 0px rgba( 0, 0, 0, 0.4); }
+a {text-decoration: none;}
+h2 {font-size:14px; color:#555; border-bottom:1px solid #CCC; padding-bottom:6px; margin-bottom:20px; width:80%}
+.contenu {margin: 0; padding: 0; width:900px; margin:0 auto;}
+.section{width:300px; float:left;}
+.section.small{width:260px;}
+.section.large{width:340px;}
+.content-empty{margin-bottom:30px;float:left; width:100%} 
+.bouton.empty{height:22px; width:159px; float:left; margin:0 20px 20px 0; clear:none;}
+*/
+/* --  Boutons -- */
+
+.bouton {
+	width:auto; 
+	padding:8px 0; 
+	text-align:center; 
+	display: inline-block; 
+	margin:0 15px 15px 0; 
+	font-size: 1.6em; 
+	border-radius:7px; 
+	box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1); 
+	font-size: 0.85em; 
+	width:120px; 
+	color:white;
+	text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);
+	/* en plus */
+	box-shadow: 0px 1px 1px rgb(164, 227, 136) inset;
+	border-color: rgb(59, 110, 34) rgb(59, 110, 34) rgb(44, 81, 21);
+	border: 1px solid; 
+	}	
+	
+.bouton.small{font-size: 0.8em; width:100px}
+.bouton.medium{font-size: 0.9em; width:120px}	
+.bouton.large{font-size: 1.1em; width:150px}
+
+
+/* ************************** Couleurs des boutons / Hover et Active classes *************************** */
+
+/* -- Bouton noir -- */	
+.bouton.noir, .bouton.noir:active { 
+	background: #444; 
+	background: linear-gradient( #555, #2C2C2C);
+	background: -webkit-linear-gradient( #555, #2C2C2C); 
+	background: -moz-linear-gradient( #555, #2C2C2C); 
+	background: -ms-linear-gradient( #555, #2C2C2C); 
+	background: -o-linear-gradient( #555, #2C2C2C); 
+	background: linear-gradient( #555, #2C2C2C);
+	}
+.bouton.noir:hover {
+	background: #555;
+	background: -webkit-linear-gradient( #777, #333);
+	background: -moz-linear-gradient( #777, #333);
+	background: -ms-linear-gradient( #777, #333);
+	background: -o-linear-gradient( #777, #333);
+	background: linear-gradient( #777, #333);	
+	}	
+.bouton.noir:active{box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton gris -- */	
+.bouton.gris {
+	background: #C8C8C8;
+	background: -webkit-linear-gradient( #C8C8C8, #A0A0A0);
+	background: -moz-linear-gradient( #C8C8C8, #A0A0A0);
+	background: -ms-linear-gradient( #C8C8C8, #A0A0A0);
+	background: -o-linear-gradient( #C8C8C8, #A0A0A0);
+	background: linear-gradient( #C8C8C8, #A0A0A0);
+	}	
+.bouton.gris:hover {
+	background: #D8D8D8;
+	background: -webkit-linear-gradient( #D8D8D8, #B0B0B0); 
+	background: -moz-linear-gradient( #D8D8D8, #B0B0B0); 
+	background: -ms-linear-gradient( #D8D8D8, #B0B0B0); 
+	background: -o-linear-gradient( #D8D8D8, #B0B0B0); 
+	background: linear-gradient( #D8D8D8, #B0B0B0);
+	}
+.bouton.gris:active{box-shadow: 1px 1px 10px #999 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton blanc -- */	
+.bouton.blanc, .bouton.blanc:active {
+	background: #F8F8F8;
+	background: -webkit-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -moz-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -ms-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -o-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: linear-gradient( #F8F8F8, #D7D7D7);
+	text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);
+	}
+.bouton.blanc:hover{ 
+	background: #F5F5F5;
+	background: -webkit-linear-gradient( #FFF, #CCC);
+	background: -moz-linear-gradient( #FFF, #CCC);
+	background: -ms-linear-gradient( #FFF, #CCC);
+	background: -o-linear-gradient( #FFF, #CCC);
+	background: linear-gradient( #FFF, #CCC);
+	}
+.bouton.blanc:active {box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton bleu -- */
+.bouton.bleu, .bouton.bleu:active{
+	background: #3C98CF;
+	background: -webkit-linear-gradient( #3C98CF, #2D74A0); 
+	background: -moz-linear-gradient( #3C98CF, #2D74A0); 
+	background: -ms-linear-gradient( #3C98CF, #2D74A0); 
+	background: -o-linear-gradient( #3C98CF, #2D74A0); 
+	background: linear-gradient( #3C98CF, #2D74A0);
+	}
+.bouton.bleu:hover {
+	background: #3CA1D3;
+	background: -webkit-linear-gradient( #3CA1D3, #3386AF);
+	background: -moz-linear-gradient( #3CA1D3, #3386AF);
+	background: -ms-linear-gradient( #3CA1D3, #3386AF);
+	background: -o-linear-gradient( #3CA1D3, #3386AF);
+	background: linear-gradient( #3CA1D3, #3386AF);
+	}
+.bouton.bleu:active {box-shadow: 1px 1px 10px #1E516B inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton rouge -- */	
+.bouton.rouge, .bouton.rouge:active{
+	background: #F4523D;
+	background: -webkit-linear-gradient( #F4523D, #B43300);
+	background: -moz-linear-gradient( #F4523D, #B43300);
+	background: -ms-linear-gradient( #F4523D, #B43300);
+	background: -o-linear-gradient( #F4523D, #B43300);
+	background: linear-gradient( #F4523D, #B43300);
+	}
+.bouton.rouge:hover {
+	background: #FF6A4F;
+	background: -webkit-linear-gradient( #FF6A4F, #D33B11); 
+	background: -moz-linear-gradient( #FF6A4F, #D33B11); 
+	background: -ms-linear-gradient( #FF6A4F, #D33B11); 
+	background: -o-linear-gradient( #FF6A4F, #D33B11); 
+	background: linear-gradient( #FF6A4F, #D33B11);
+	}
+.bouton.rouge:active {box-shadow: 1px 1px 10px #A83318 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton rouge foncé -- */	
+.bouton.rouge-fonce {
+	background: #C53727;
+	background: -webkit-linear-gradient( #C53727, #A82B22); 
+	background: -moz-linear-gradient( #C53727, #A82B22); 
+	background: -ms-linear-gradient( #C53727, #A82B22); 
+	background: -o-linear-gradient( #C53727, #A82B22); 
+	background: linear-gradient( #C53727, #A82B22);
+	}
+.bouton.rouge-fonce:hover{
+	background: #D13A2F;
+	background: -webkit-linear-gradient( #D13A2F, #BC2E2A);
+	background: -moz-linear-gradient( #D13A2F, #BC2E2A);
+	background: -ms-linear-gradient( #D13A2F, #BC2E2A);
+	background: -o-linear-gradient( #D13A2F, #BC2E2A);
+	background: linear-gradient( #D13A2F, #BC2E2A);
+	}	
+.bouton.rouge-fonce:active{box-shadow: 1px 1px 10px #8E2825 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+	
+/* -- Bouton orange -- */	
+.bouton.orange, .bouton.orange:active {
+	background: #F28F22;
+	background: -webkit-linear-gradient( #FF6A4F, #D33B11); 
+	background: -moz-linear-gradient( #FF6A4F, #D33B11); 
+	background: -ms-linear-gradient( #FF6A4F, #D33B11); 
+	background: -o-linear-gradient( #FF6A4F, #D33B11); 
+	background: linear-gradient( #F28F22, #BD5D19);
+	}
+.bouton.orange:hover{
+	background: #F79E46;
+	background: -webkit-linear-gradient( #F79E46, #C96928);
+	background: -moz-linear-gradient( #F79E46, #C96928);
+	background: -ms-linear-gradient( #F79E46, #C96928);
+	background: -o-linear-gradient( #F79E46, #C96928);
+	background: linear-gradient( #F79E46, #C96928);
+	}
+.bouton.orange:active{box-shadow: 1px 1px 10px #D33B11 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton vert -- */	
+.bouton.vert {
+	background: #91BD09;
+	background: -webkit-linear-gradient( #91BD09, #4E9939); 
+	background: -moz-linear-gradient( #91BD09, #4E9939); 
+	background: -ms-linear-gradient( #91BD09, #4E9939); 
+	background: -o-linear-gradient( #91BD09, #4E9939); 
+	background: linear-gradient( #91BD09, #4E9939);
+	}
+.bouton.vert:hover{
+	background: #A3C416;
+	background: -webkit-linear-gradient( #A3C416, #55A53C);
+	background: -moz-linear-gradient( #A3C416, #55A53C);
+	background: -ms-linear-gradient( #A3C416, #55A53C);
+	background: -o-linear-gradient( #A3C416, #55A53C);
+	background: linear-gradient( #A3C416, #55A53C);
+	}	
+.bouton.vert:active{box-shadow: 1px 1px 10px #285419 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton jaune -- */	
+.bouton.jaune {
+	background: #FFD217;
+	background: -webkit-linear-gradient( #FFD217, #FFB515); 
+	background: -moz-linear-gradient( #FFD217, #FFB515); 
+	background: -ms-linear-gradient( #FFD217, #FFB515); 
+	background: -o-linear-gradient( #FFD217, #FFB515); 
+	background: linear-gradient( #FFD217, #FFB515);
+	}
+.bouton.jaune:hover{
+	background: #FFDE1A;
+	background: -webkit-linear-gradient( #FFDE1A, #FFC217);
+	background: -moz-linear-gradient( #FFDE1A, #FFC217);
+	background: -ms-linear-gradient( #FFDE1A, #FFC217);
+	background: -o-linear-gradient( #FFDE1A, #FFC217);
+	background: linear-gradient( #FFDE1A, #FFC217);
+	}	
+.bouton.jaune:active{box-shadow: 1px 1px 10px #E5B738 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* -- Bouton violet -- */	
+.bouton.violet {
+	background: #170667;
+/* 	background: -webkit-linear-gradient( #170667, blue); 
+	background: -moz-linear-gradient( #170667, blue); 
+	background: -ms-linear-gradient( #170667, blue); 
+	background: -o-linear-gradient( #170667, blue); 
+	background: linear-gradient( #170667, blue); */
+	
+	}
+.bouton.violet:hover{
+	background: #221298;
+/* 	background: -webkit-linear-gradient( #221298, #240412);
+	background: -moz-linear-gradient( #221298, #240412);
+	background: -ms-linear-gradient( #221298, #240412);
+	background: -o-linear-gradient( #221298, #240412);
+	background: linear-gradient( #221298, #240412); */
+	background: -webkit-linear-gradient( #170667, blue); 
+	background: -moz-linear-gradient( #170667, blue); 
+	background: -ms-linear-gradient( #170667, blue); 
+	background: -o-linear-gradient( #170667, blue); 
+	background: linear-gradient( #170667, blue);
+	}	
+.bouton.violet:active{box-shadow: 1px 1px 10px #7A294F inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+/* ************************** Couleurs des polices *************************** */
+.bouton.noir, .bouton.noir:active {color:#000;}
+.bouton.gris {color:#747070; text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.4);}
+.bouton.bouton.gris:hover,  .bouton.gris:active {color:#848070;}
+.bouton.blanc {color:#BBB; text-shadow: 0px 1px 0px rgba( 255, 255, 255, 1);}
+.bouton.bouton.blanc:hover,  .bouton.blanc:active {color:#AAA;}
+.bouton.bleu {color:#0B4968; text-shadow: 0px 1px 0px rgba( 200, 200, 200, 0.4);}
+.bouton.bouton.bleu:hover,  .bouton.bleu:active {color:#0B4972;}
+.bouton.rouge {color:#8E1015; text-shadow: 0px 1px 0px rgba( 200, 200, 200, 0.4);}
+.bouton.rouge:hover,  .bouton.rouge:active {color:#8E1000;}
+.bouton.rouge-fonce {color:#77140E; text-shadow: 0px 1px 0px rgba( 226, 160, 160, 0.4);}
+.bouton.rouge-fonce:hover,  .bouton.rouge-fonce:active {color:#8E1010;}
+.bouton.orange {color:#7C451F; text-shadow: 0px 1px 0px rgba( 226, 200, 200, 0.4);}
+.bouton.orange:hover,  .bouton.orange:active {color:#894520;}
+.bouton.vert {color:#3D722E; text-shadow: 0px 1px 0px rgba( 226, 200, 200, 0.4);}
+.bouton.vert:hover,  .bouton.vert:active {color:#3A6D2C;}
+.bouton.jaune {color:#AF772E; text-shadow: 0px 1px 0px rgba( 250, 250, 250, 0.4);}
+.bouton.jaune:hover,  .bouton.jaune:active {color:#966729;}
+.bouton.violet {color:white; font-weight:bold;text-decoration:none; text-shadow: 0px 1px 0px rgba( 200, 160, 160, 0.4);}
+.bouton.violet:hover,  .bouton.violet:active {color:white;}
